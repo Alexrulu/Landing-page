@@ -245,9 +245,11 @@ main{
     padding: 10px;
     width: 25%;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
 }
 .contact-section>div>span{
     font-size: 14px;
+    color: var(--text-color);
 }
 .contact-section>input:focus{
     outline: none;
@@ -326,6 +328,19 @@ main{
     }
     .contact-section-below{
         padding: 0 5%;
+    }
+    /*hover effects*/
+    .ul-nav>li>a {
+        transition: color 0.2s ease;
+    }
+    .ul-nav>li>a:hover {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .contact-section-below>button {
+        transition: color 0.2s ease;
+    }
+    .contact-section-below>button:hover {
+        color: rgba(255, 255, 255, 0.8);
     }
 }
 @media screen and (min-width:1240px) { /* desktop-mid */
