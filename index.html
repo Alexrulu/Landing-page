@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a4c24707d1.js" crossorigin="anonymous"></script>
+    <title>Alex Lucero</title>
+</head>
+<body id="inicio">
+    <div class="cont-body">
+        <header>
+            <nav>
+                <h1>Lucero Alexandro</h1>
+                <input type="checkbox" id="menu-toggle" hidden>
+                <label for="menu-toggle" class="fa fa-bars"></label>
+                <ul class="ul-nav">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="sobre-mi" class="my-descryption-cont">
+                <div>
+                    <img class="myphoto" alt="Un tipo fachero, te cierra el estadio" src="./public/WhatsApp Image 2024-04-23 at 1.24.46 AM.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Fullstack Developer</h2>
+                    <p class="description-text-p">¿Buscas un developer rapido, eficiente, compañero y con ganas de aprender? Contactame.</p>
+                </div>
+            </div>
+            <ul class="my-skills-cont">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+                <li><img class="tailwind-icon" src="./public/tailwind-css.svg"></li>
+            </ul>
+            <div id="portfolio" class="projects-cont">
+                <h3>My projects</h3>
+                <div class="container-for-scroll-text">
+                    <p>Mercado liebre - Proyecto FORMAR</p>
+                    <div class="scroll-projects">
+                        <img src="./public/mercadol-example.png">
+                        <img src="./public/mercadol-example-tablet.png">
+                        <img src="./public/mercadol-example-mobile.png">
+                    </div>
+                    <p class="text-scroll">Puedes deslizar</p>
+                </div>
+                <div class="container-for-scroll-text p-top">
+                    <p>Kitchening - Proyecto FORMAR</p>
+                    <div class="scroll-projects">
+                        <img src="./public/kitchenning-example.png">
+                        <img src="./public/kitchenning-example-tablet.png">
+                        <img src="./public/kitchenning-example-mobile.png">
+                    </div>
+                    <p class="text-scroll">Puedes deslizar</p>
+                </div>
+            </div>
+            <div id="contact">
+                <form class="contact-section">
+                <p>¿Quieres contactarme?</p>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Mensaje">
+                <div class="contact-section-below">
+                    <button type="reset">Enviar</button>
+                    <span>¡Gracias por tu mensaje!</span>
+                </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

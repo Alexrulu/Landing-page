@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --text-color: #191a3e
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(./public/Freebie-GradientTextures-Preview-02.webp);
+    backdrop-filter: blur(20px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: auto;
+    padding: 4%;
+}
+.cont-body{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+/*--------------HEADER-------------*/
+header{
+    background-color: rgba(255, 255, 255, 0.300);
+    border-radius: 20px 20px 0 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+header>nav{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    position: relative;
+}
+nav>h1{
+    font-weight: 500;
+}
+.fa-bars{
+    font-size: 25px;
+    cursor: pointer;
+}
+#menu-toggle:checked + label + .ul-nav {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    right: 20px;
+}
+.ul-nav{
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.300);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+.ul-nav a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.ul-nav li{
+    padding: 10px;
+}
+/*--------------MAIN-------------*/
+main{
+    background-color: rgba(255, 255, 255, 0.300);
+    border-radius: 0 0 20px 20px;
+}
+.my-descryption-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.my-descryption-cont>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.myphoto{
+    width: 250px;
+    border-radius: 50%;
+    border: solid 2px rgba(255, 255, 255, 0.200);
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.my-descryption-cont>div>h2{
+    font-size: 20px;
+    padding: 5px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.200);
+    color: var(--text-color);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/*----------SKILLS-MAIN---------*/
+.my-skills-cont{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.tailwind-icon{
+    width: 60px;
+    height: 60px;
+    color: deepskyblue;
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 3px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.fa-html5{
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    color: orange;
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.fa-css3-alt{
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    color: deepskyblue;
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.fa-github{
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    color:crimson;
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/*----------PROJECTS-MAIN---------*/
+.projects-cont{
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.p-top{
+    padding-top: 30px;
+}
+.projects-cont>h3{
+    padding-bottom: 10px;
+}
+.scroll-projects{
+    overflow-x: auto;
+    display: flex;
+    padding: 10px 0;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 10px;
+    position: relative;
+    margin: 10px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0);
+}
+.scroll-projects>img{
+    height: 350px;
+    border-radius: 10px;
+}
+.container-for-scroll-text{
+    position: relative;
+}
+.text-scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.500);
+    padding: 5px 10px ;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+}
+/*----------CONTACT-MAIN---------*/
+.contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.contact-section>p{
+    width: 100%;
+    text-align: center;
+    color: var(--text-color);
+}
+.contact-section>input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--text-color);
+    width: 100%;
+    padding: 5px 0;
+}
+.contact-section>input::placeholder{
+    color: var(--text-color) ;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.contact-section>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.contact-section>div>button{
+    background-color: rgba(255, 255, 255, 0.400);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 25%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.contact-section>div>span{
+    font-size: 14px;
+}
+.contact-section>input:focus{
+    outline: none;
+}
+@media screen and (min-width:768px) { /* tablet */
+    body{
+        padding: 2% 10%;
+    }
+    header, main{
+        padding: 0 2%;
+    }
+    .my-descryption-cont{
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .description-text-p{
+        width: 80%;
+    }
+    .my-skills-cont{
+        padding: 0 20%;
+        margin-bottom: 20px;
+    }
+    .projects-cont{
+        text-align: left;
+    }
+    .scroll-projects>img {
+        height: 425px;
+    }
+    .projects-cont>h3, .container-for-scroll-text>p{
+        padding-left: 10px;
+    }
+    .contact-section>input{
+        width: 45%;
+    }
+}
+@media screen and (min-width:1024px) { /* desktop-min */
+    body{
+        padding: 1.5% 12.5%;
+    }
+    header, main{
+        padding: 0 4%;
+    }
+    .fa-bars{
+        display: none !important;
+    }
+    .ul-nav{
+        position: relative;
+        opacity: 1;
+        display: flex;
+        inset: 0;
+        pointer-events: auto;
+        box-shadow: none;
+        backdrop-filter: none;
+        background-color: transparent;
+        padding: 0;
+    }
+    .my-descryption-cont{
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .description-text-p{
+        width: 60%;
+    }
+    .my-skills-cont{
+        padding: 0 30%;
+        margin-bottom: 20px;
+    }
+    .projects-cont{
+        text-align: left;
+    }
+    .projects-cont>h3, .container-for-scroll-text>p{
+        padding-left: 10px;
+    }
+    .contact-section>input{
+        width: 40%;
+    }
+    .contact-section-below{
+        padding: 0 5%;
+    }
+}
+@media screen and (min-width:1240px) { /* desktop-mid */
+    body{
+        padding: 1% 15%;
+    }
+    header, main{
+        padding: 0 5%;
+    }
+    header > nav {
+        padding: 0 10px;
+    }
+    .ul-nav{
+        padding: 10px 0;
+    }
+    .description-text-p{
+        width: 70%;
+    }
+    .scroll-projects>img {
+        height: 500px;
+    }
+    .contact-section>input{
+        width: 35%;
+    }
+    .contact-section-below{
+        padding: 0 7.5%;
+    }
+}
+@media screen and (min-width:1440px) { /* desktop-max+ */
+    body{
+        padding: 1% 20%;
+    }
+    .ul-nav{
+        padding: 20px 0;
+    }
+    .description-text-p{
+        width: 75%;
+    }
+    .scroll-projects>img {
+        height: 600px;
+    }
+    .contact-section-below{
+        padding: 0 10%;
+    }
+}
